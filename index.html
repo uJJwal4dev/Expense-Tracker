@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget and Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/9382/9382189.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <header>
+        <h1>Personal Budget and Expense Tracker</h1>
+    </header>
+    <main>
+        <section id="currency-converter">
+            <h2>Currency Converter</h2>
+            <form id="convert-currency-form">
+                <label for="convert-amount">Amount:</label>
+                <input type="number" id="convert-amount" required>
+                
+                <label for="convert-from">From:</label>
+                <select id="convert-from" required></select>
+                
+                <label for="convert-to">To:</label>
+                <select id="convert-to" required></select>
+                
+                <button type="submit">Convert</button>
+            </form>
+            <p id="conversion-result"></p>
+        </section>
+
+        <section id="expense-form">
+            <h2>Add Expense</h2>
+            <form id="add-expense-form">
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name" required>
+                
+                <label for="expense-amount">Amount:</label>
+                <input type="number" id="expense-amount" required>
+                
+                <label for="expense-category">Category:</label>
+                <select id="expense-category" required>
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="expense-currency">Currency:</label>
+                <select id="expense-currency" required></select>
+                
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        
+        <div class="insights-container">
+            <section id="expenses-list">
+                <h2>Expenses</h2>
+                <div class="sort-controls">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="date-new">Date (Newest First)</option>
+                        <option value="date-old">Date (Oldest First)</option>
+                        <option value="amount-high">Amount (Highest First)</option>
+                        <option value="amount-low">Amount (Lowest First)</option>
+                        <option value="name">Name (A-Z)</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+                <ul id="expenses"></ul>
+            </section>
+            
+            <section id="spending-insights">
+                <h2>Spending Insights</h2>
+                <div id="expense-chart"></div>
+                <div id="expense-stats" class="stats-container">
+                    <div class="stat-item">
+                        <h3>Highest Expense</h3>
+                        <p id="highest-expense">-</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Most Common Category</h3>
+                        <p id="common-category">-</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>This Month's Total</h3>
+                        <p id="month-total">-</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="charts.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

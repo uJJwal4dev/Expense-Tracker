@@ -32,7 +32,7 @@ Hey there! 👋 This is my cool expense tracker project that I made to help mana
 ## 🚀 How to Use
 
 1. **Visit the Live Site**
-   - Go to: [Personal Budget Tracker](https://github.com/uJJwal4dev/Expense-Tracker)
+   - Go to: [Personal Budget Tracker](https://ujjwal4dev.github.io/Expense-Tracker/)
    - No installation needed - works right in your browser!
 
 2. **Start Managing Your Expenses**

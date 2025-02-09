@@ -67,6 +67,7 @@ Hey there! 👋 This is my cool expense tracker project that I made to help mana
 - CSS - to make it look pretty
 - JavaScript - to make it work
   - Async/Await for API calls
+  - localStorage for data persistence
   - Modern ES6+ features
 - ApexCharts - for the cool donut chart
 - Exchange Rate API - for currency conversion
@@ -83,6 +84,7 @@ Hey there! 👋 This is my cool expense tracker project that I made to help mana
 - Currency conversion
 - Sorting and filtering data
 - Making responsive designs
+- localStorage use for data persistence
 - Extensive use of Async/Await over promises and callbacks
 
 ## 🎯 Future Improvements
